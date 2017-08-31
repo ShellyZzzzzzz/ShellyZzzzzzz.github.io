@@ -4,14 +4,86 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/06/01/%E7%8C%9C%E7%8C%9C2017%E6%88%91%E8%83%BD%E8%AF%BB%E5%AE%8C%E5%A4%9A%E5%B0%91%E6%9C%AC%E4%B9%A6/</loc>
-    <lastmod>2017-06-01T03:45:29.000Z</lastmod>
+    <loc>http://yoursite.com/2017/08/30/%E5%A4%9A%E5%AD%A6%E7%9F%A5%E8%AF%86%E5%A4%9A%E8%AF%BB%E4%B9%A6-2017/</loc>
+    <lastmod>2017-08-31T01:07:16.000Z</lastmod>
     <data>
         <display>
-        <title>猜猜2017我能读完多少本书</title>
-        <pubTime>2017-06-01T03:40:12.000Z</pubTime>
+        <title>多学知识多读书[2017]</title>
+        <pubTime>2017-08-30T14:06:20.000Z</pubTime>
         
-        <tag>书单</tag>
+        <tag>读书</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/05/15/%E4%B8%8D%E6%87%82%E8%AE%BE%E8%AE%A1%E7%9A%84%E6%8A%80%E6%9C%AF%E4%B8%8D%E6%98%AF%E5%A5%BD%E4%BA%A4%E4%BA%92/</loc>
+    <lastmod>2017-08-30T13:57:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>不懂设计的技术不是好交互</title>
+        <pubTime>2017-05-15T07:43:03.000Z</pubTime>
+        
+        <tag>设计</tag>
+         
+        <tag>交互</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/05/04/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2017-08-16T15:38:24.000Z</lastmod>
+    <data>
+        <display>
+        <title>ES6学习笔记</title>
+        <pubTime>2017-05-04T07:37:03.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>ES6</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/07/27/%E8%B0%81%E8%AF%B4%E6%8A%80%E6%9C%AF%E4%B8%8D%E8%83%BD%E5%BE%88%E4%BC%9A%E6%B2%9F%E9%80%9A/</loc>
+    <lastmod>2017-07-27T12:49:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>谁说技术不能很会沟通~</title>
+        <pubTime>2017-07-27T12:22:55.000Z</pubTime>
+        
+        <tag>沟通</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/06/11/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2017-06-11T09:19:04.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript设计模式</title>
+        <pubTime>2017-06-11T09:01:01.000Z</pubTime>
+        
+        <tag>js</tag>
          
          
            
@@ -22,7 +94,7 @@
     
   <url>
     <loc>http://yoursite.com/2017/03/08/%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%EF%BC%8C%E7%AC%94%E5%A4%B4%E6%9D%A5%E5%87%91/</loc>
-    <lastmod>2017-05-25T01:54:05.000Z</lastmod>
+    <lastmod>2017-06-11T09:05:51.000Z</lastmod>
     <data>
         <display>
         <title>记性不好，笔头来凑</title>
@@ -50,44 +122,6 @@
     </url>
 
     
-  <url>
-    <loc>http://yoursite.com/2017/05/04/ES6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2017-05-22T13:47:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>ES6学习笔记</title>
-        <pubTime>2017-05-04T07:37:03.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>ES6</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://yoursite.com/2017/05/15/%E4%B8%8D%E6%87%82%E8%AE%BE%E8%AE%A1%E7%9A%84%E6%8A%80%E6%9C%AF%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%A5%BD%E4%BA%A4%E4%BA%92/</loc>
-    <lastmod>2017-05-17T16:49:30.000Z</lastmod>
-    <data>
-        <display>
-        <title>不懂设计的技术不是一个好交互</title>
-        <pubTime>2017-05-15T07:43:03.000Z</pubTime>
-        
-        <tag>设计</tag>
-         
-        <tag>交互</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://yoursite.com/2017/04/07/Get-some-TRICKs/</loc>
