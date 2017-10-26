@@ -4,8 +4,27 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/09/17/Underscore%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/</loc>
+    <lastmod>2017-10-26T16:05:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>Underscore源码解读笔记</title>
+        <pubTime>2016-09-17T06:20:05.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>源码</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/03/08/%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%EF%BC%8C%E7%AC%94%E5%A4%B4%E6%9D%A5%E5%87%91-JS%E7%AF%87/</loc>
-    <lastmod>2017-10-26T12:35:20.000Z</lastmod>
+    <lastmod>2017-10-26T14:49:21.000Z</lastmod>
     <data>
         <display>
         <title>记性不好，笔头来凑-JS篇</title>
@@ -116,25 +135,6 @@
         <tag>设计</tag>
          
         <tag>交互</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/09/17/Underscore%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/</loc>
-    <lastmod>2017-09-21T15:54:08.000Z</lastmod>
-    <data>
-        <display>
-        <title>Underscore源码解读笔记</title>
-        <pubTime>2016-09-17T06:20:05.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>源码</tag>
          
          
            
