@@ -4,8 +4,25 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/03/08/%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%EF%BC%8C%E7%AC%94%E5%A4%B4%E6%9D%A5%E5%87%91-JS%E7%AF%87/</loc>
+    <lastmod>2017-10-26T12:35:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>记性不好，笔头来凑-JS篇</title>
+        <pubTime>2017-03-08T02:43:33.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/10/23/%E6%9D%A5%E5%95%8A-%E8%B7%A8%E5%9F%9F%E5%95%8A/</loc>
-    <lastmod>2017-10-24T15:52:32.000Z</lastmod>
+    <lastmod>2017-10-26T07:47:43.000Z</lastmod>
     <data>
         <display>
         <title>来啊 跨域啊</title>
@@ -15,6 +32,21 @@
          
         <tag>cors</tag>
          
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/09/21/%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%EF%BC%8C%E7%AC%94%E5%A4%B4%E6%9D%A5%E5%87%91-HTML-CSS%E7%AF%87/</loc>
+    <lastmod>2017-10-26T07:32:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>记性不好，笔头来凑-HTML+CSS篇</title>
+        <pubTime>2017-09-21T11:10:46.000Z</pubTime>
+        
          
            
         </display>
@@ -48,38 +80,6 @@
         <pubTime>2017-05-08T07:49:14.000Z</pubTime>
         
         <tag>Web</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/09/21/%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%EF%BC%8C%E7%AC%94%E5%A4%B4%E6%9D%A5%E5%87%91-HTML-CSS%E7%AF%87/</loc>
-    <lastmod>2017-10-19T14:07:34.000Z</lastmod>
-    <data>
-        <display>
-        <title>记性不好，笔头来凑-HTML+CSS篇</title>
-        <pubTime>2017-09-21T11:10:46.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/03/08/%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%EF%BC%8C%E7%AC%94%E5%A4%B4%E6%9D%A5%E5%87%91-JS%E7%AF%87/</loc>
-    <lastmod>2017-10-17T12:48:12.000Z</lastmod>
-    <data>
-        <display>
-        <title>记性不好，笔头来凑-JS篇</title>
-        <pubTime>2017-03-08T02:43:33.000Z</pubTime>
-        
-        <tag>js</tag>
          
          
            
