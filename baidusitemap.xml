@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://yoursite.com/2017/12/12/%E5%BD%93%E4%BD%A0%E8%BE%93%E5%85%A5url%E5%90%8E%EF%BC%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%91%E7%94%9F%E4%BA%86%E4%BB%80%E4%B9%88/</loc>
-    <lastmod>2018-03-12T15:09:14.000Z</lastmod>
+    <lastmod>2018-03-13T09:49:15.000Z</lastmod>
     <data>
         <display>
         <title>当你输入url后，浏览器发生了什么</title>
@@ -19,8 +19,25 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/10/20/%E4%BF%A1%E6%81%AF%E7%88%86%E7%82%B8-%E6%87%82%E7%82%B9%E6%80%A7%E8%83%BD/</loc>
+    <lastmod>2018-03-13T08:37:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>信息爆炸 懂点性能</title>
+        <pubTime>2017-10-20T06:20:12.000Z</pubTime>
+        
+        <tag>Web</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/03/08/%E8%AE%B0%E6%80%A7%E4%B8%8D%E5%A5%BD%EF%BC%8C%E7%AC%94%E5%A4%B4%E6%9D%A5%E5%87%91-JS%E7%AF%87/</loc>
-    <lastmod>2018-03-12T14:38:46.000Z</lastmod>
+    <lastmod>2018-03-13T06:52:15.000Z</lastmod>
     <data>
         <display>
         <title>记性不好，笔头来凑-JS篇</title>
@@ -37,7 +54,7 @@
     
   <url>
     <loc>http://yoursite.com/2017/10/23/%E6%9D%A5%E5%95%8A-%E8%B7%A8%E5%9F%9F%E5%95%8A/</loc>
-    <lastmod>2018-03-12T02:44:23.000Z</lastmod>
+    <lastmod>2018-03-13T04:42:57.000Z</lastmod>
     <data>
         <display>
         <title>来啊 跨域啊</title>
@@ -152,23 +169,6 @@
         <tag>js</tag>
          
         <tag>源码</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/10/20/%E4%BF%A1%E6%81%AF%E7%88%86%E7%82%B8-%E6%87%82%E7%82%B9%E6%80%A7%E8%83%BD/</loc>
-    <lastmod>2017-10-23T14:39:25.000Z</lastmod>
-    <data>
-        <display>
-        <title>信息爆炸 懂点性能</title>
-        <pubTime>2017-10-20T06:20:12.000Z</pubTime>
-        
-        <tag>Web</tag>
          
          
            
