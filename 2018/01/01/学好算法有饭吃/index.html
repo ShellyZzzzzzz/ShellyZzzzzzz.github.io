@@ -21,7 +21,7 @@ ES6123Array.prototype.distinc">
 <meta property="og:image" content="http://yoursite.com/2018/01/01/学好算法有饭吃/algorithm-4.gif">
 <meta property="og:image" content="http://yoursite.com/2018/01/01/学好算法有饭吃/algorithm-3.gif">
 <meta property="og:image" content="http://yoursite.com/2018/01/01/学好算法有饭吃/algorithm-10.jpg">
-<meta property="og:updated_time" content="2018-03-16T09:36:49.000Z">
+<meta property="og:updated_time" content="2018-03-19T09:06:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学好算法有饭吃">
 <meta name="twitter:description" content="&amp;#x6570;&amp;#x7EC4;&amp;#x53BB;&amp;#x91CD;ES512345Array.prototype.distinct = function() {    return this.filter(function(v, i) {         return this.indexOf(v) === i;    }, this);}
@@ -192,7 +192,7 @@ ES6123Array.prototype.distinc">
 <h2 id="&#x63D2;&#x5165;&#x6392;&#x5E8F;"><a href="#&#x63D2;&#x5165;&#x6392;&#x5E8F;" class="headerlink" title="&#x63D2;&#x5165;&#x6392;&#x5E8F;"></a>&#x63D2;&#x5165;&#x6392;&#x5E8F;</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">insertionSort</span>(<span class="params">array</span>) </span>{</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; array.length; i++) {</div><div class="line">        <span class="keyword">var</span> key = array[i];</div><div class="line">        <span class="keyword">var</span> j = i - <span class="number">1</span>;</div><div class="line">        <span class="keyword">while</span> (array[j] &gt; key) {</div><div class="line">            array[j + <span class="number">1</span>] = array[j];</div><div class="line">            j--;</div><div class="line">        }</div><div class="line">        array[j + <span class="number">1</span>] = key;</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> array;</div><div class="line">}</div></pre></td></tr></table></figure>
 <div align="center"><img src="/2018/01/01/&#x5B66;&#x597D;&#x7B97;&#x6CD5;&#x6709;&#x996D;&#x5403;/algorithm-4.gif" alt="algorithm-3"></div>
 
-<h2 id="&#x5FEB;&#x901F;&#x6392;&#x5E8F;"><a href="#&#x5FEB;&#x901F;&#x6392;&#x5E8F;" class="headerlink" title="&#x5FEB;&#x901F;&#x6392;&#x5E8F;"></a>&#x5FEB;&#x901F;&#x6392;&#x5E8F;</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">quickSort</span>(<span class="params">array, left, right</span>) </span>{</div><div class="line">    <span class="keyword">if</span> (left &lt; right) {</div><div class="line">        <span class="comment">// x&#x4E3A;&#x672C;&#x5FAA;&#x73AF;&#x7684;&#x672B;&#x4F4D;&#x503C; i&#x7528;&#x4F5C;&#x8BA1;&#x6570;</span></div><div class="line">        <span class="keyword">var</span> x = array[right], </div><div class="line">            i = left - <span class="number">1</span>, </div><div class="line">            temp;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> j = left; j &lt;= right; j++) {</div><div class="line">            <span class="keyword">if</span> (array[j] &lt;= x) {</div><div class="line">                i++;</div><div class="line">                temp = array[i];</div><div class="line">                array[i] = array[j];</div><div class="line">                array[j] = temp;</div><div class="line">            }</div><div class="line">        }</div><div class="line">        quickSort(array, left, i - <span class="number">1</span>);</div><div class="line">        quickSort(array, i + <span class="number">1</span>, right);</div><div class="line">    }</div><div class="line">    <span class="keyword">return</span> array;</div><div class="line">}</div></pre></td></tr></table></figure>
+<h2 id="&#x5FEB;&#x901F;&#x6392;&#x5E8F;"><a href="#&#x5FEB;&#x901F;&#x6392;&#x5E8F;" class="headerlink" title="&#x5FEB;&#x901F;&#x6392;&#x5E8F;"></a>&#x5FEB;&#x901F;&#x6392;&#x5E8F;</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">quickSort</span>(<span class="params">array, left, right</span>) </span>{</div><div class="line">    <span class="keyword">if</span> (left &lt; right) {</div><div class="line">        <span class="comment">// x&#x4E3A;&#x672C;&#x5FAA;&#x73AF;&#x7684;&#x672B;&#x4F4D;&#x503C; i&#x7528;&#x4F5C;&#x8BA1;&#x6570;</span></div><div class="line">        <span class="keyword">var</span> x = array[right], </div><div class="line">            i = left - <span class="number">1</span>, </div><div class="line">            temp;</div><div class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> j = left; j &lt;= right; j++) {</div><div class="line">            <span class="keyword">if</span> (array[j] &lt;= x) {</div><div class="line">                i++;</div><div class="line">                temp = array[i];</div><div class="line">                array[i] = array[j];</div><div class="line">                array[j] = temp;</div><div class="line">            }</div><div class="line">        }</div><div class="line">        quickSort(array, left, i - <span class="number">1</span>);</div><div class="line">        quickSort(array, i + <span class="number">1</span>, right);</div><div class="line">    }&#x3001;</div><div class="line">    <span class="keyword">return</span> array;</div><div class="line">}</div></pre></td></tr></table></figure>
 <div align="center"><img src="/2018/01/01/&#x5B66;&#x597D;&#x7B97;&#x6CD5;&#x6709;&#x996D;&#x5403;/algorithm-3.gif" alt="algorithm-4"></div>
 
 <h2 id="&#x6027;&#x80FD;&#x603B;&#x7ED3;"><a href="#&#x6027;&#x80FD;&#x603B;&#x7ED3;" class="headerlink" title="&#x6027;&#x80FD;&#x603B;&#x7ED3;"></a>&#x6027;&#x80FD;&#x603B;&#x7ED3;</h2><div align="center"><img src="/2018/01/01/&#x5B66;&#x597D;&#x7B97;&#x6CD5;&#x6709;&#x996D;&#x5403;/algorithm-10.jpg" alt="algorithm-10"></div>
@@ -400,6 +400,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">tricks</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
@@ -408,15 +412,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">tricks</a>
+                <a href="javascript:void(0)" class="js-tag color3">设计</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">web</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">设计</a>
               </li>
              
               <li class="article-tag-list-item">
