@@ -433,16 +433,14 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/11/18/%E6%88%91%E5%8F%AA%E6%98%AF%E6%83%B3%E8%A6%81%E5%AE%9A%E4%B8%AA%E4%BD%8D/</loc>
+    <loc>http://yoursite.com/2017/01/08/Sortable-js%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/</loc>
     <lastmod>2018-03-15T15:45:56.000Z</lastmod>
     <data>
         <display>
-        <title>我只是想要定个位</title>
-        <pubTime>2016-11-18T12:02:57.000Z</pubTime>
+        <title>Sortable.js源码解读</title>
+        <pubTime>2017-01-08T11:42:00.000Z</pubTime>
         
         <tag>js</tag>
-         
-        <tag>css</tag>
          
          
            
@@ -486,14 +484,16 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/01/08/Sortable-js%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/</loc>
+    <loc>http://yoursite.com/2016/11/18/%E6%88%91%E5%8F%AA%E6%98%AF%E6%83%B3%E8%A6%81%E5%AE%9A%E4%B8%AA%E4%BD%8D/</loc>
     <lastmod>2018-03-15T15:45:56.000Z</lastmod>
     <data>
         <display>
-        <title>Sortable.js源码解读</title>
-        <pubTime>2017-01-08T11:42:00.000Z</pubTime>
+        <title>我只是想要定个位</title>
+        <pubTime>2016-11-18T12:02:57.000Z</pubTime>
         
         <tag>js</tag>
+         
+        <tag>css</tag>
          
          
            
