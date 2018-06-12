@@ -314,23 +314,6 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/09/27/%E5%81%9A%E4%B8%80%E5%8F%AA%E4%BC%9A%E6%B2%9F%E9%80%9A%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BB%94/</loc>
-    <lastmod>2018-03-21T08:59:18.000Z</lastmod>
-    <data>
-        <display>
-        <title>做一只会沟通的技术仔</title>
-        <pubTime>2017-09-27T11:06:27.000Z</pubTime>
-        
-        <tag>全能</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2017/10/07/%E6%88%91%E7%9A%84%E7%BB%84%E4%BB%B6%E5%8C%96%E5%BC%80%E5%8F%91%E5%B0%8F%E5%BF%83%E5%BE%97/</loc>
     <lastmod>2018-03-21T08:59:18.000Z</lastmod>
     <data>
@@ -356,6 +339,23 @@
         <pubTime>2017-11-23T14:44:02.000Z</pubTime>
         
         <tag>js</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/09/27/%E5%81%9A%E4%B8%80%E5%8F%AA%E4%BC%9A%E6%B2%9F%E9%80%9A%E7%9A%84%E6%8A%80%E6%9C%AF%E4%BB%94/</loc>
+    <lastmod>2018-03-21T08:59:18.000Z</lastmod>
+    <data>
+        <display>
+        <title>做一只会沟通的技术仔</title>
+        <pubTime>2017-09-27T11:06:27.000Z</pubTime>
+        
+        <tag>全能</tag>
          
          
            
@@ -433,6 +433,23 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/09/17/Underscore%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/</loc>
+    <lastmod>2018-03-15T15:45:56.000Z</lastmod>
+    <data>
+        <display>
+        <title>Underscore源码解读笔记</title>
+        <pubTime>2016-09-17T06:20:05.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/01/08/Sortable-js%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/</loc>
     <lastmod>2018-03-15T15:45:56.000Z</lastmod>
     <data>
@@ -460,23 +477,6 @@
         <tag>js</tag>
          
         <tag>css</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/09/17/Underscore%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/</loc>
-    <lastmod>2018-03-15T15:45:56.000Z</lastmod>
-    <data>
-        <display>
-        <title>Underscore源码解读笔记</title>
-        <pubTime>2016-09-17T06:20:05.000Z</pubTime>
-        
-        <tag>js</tag>
          
          
            
