@@ -147,6 +147,75 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-回调地狱，不约不约" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/02/25/回调地狱，不约不约/">回调地狱，不约不约</a>
+    </h1>
+  
+
+        
+        <a href="/2018/02/25/回调地狱，不约不约/" class="archive-article-date">
+  	<time datetime="2018-02-25T01:13:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="&#x56DE;&#x8C03;&#x5730;&#x72F1;&#x4EC0;&#x4E48;&#x6837;"><a href="#&#x56DE;&#x8C03;&#x5730;&#x72F1;&#x4EC0;&#x4E48;&#x6837;" class="headerlink" title="&#x56DE;&#x8C03;&#x5730;&#x72F1;&#x4EC0;&#x4E48;&#x6837;"></a>&#x56DE;&#x8C03;&#x5730;&#x72F1;&#x4EC0;&#x4E48;&#x6837;</h1><p>&#x5927;&#x6982;&#x5C31;&#x662F;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x6837;&#x2014;&#x2014;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">fs.readdir(source, <span class="function"><span class="keyword">function</span> (<span class="params">err, files</span>) </span>{</div><div class="line">  <span class="keyword">if</span> (err) {</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">&apos;Error finding files: &apos;</span> + err)</div><div class="line">  } <span class="keyword">else</span> {</div><div class="line">    files.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">filename, fileIndex</span>) </span>{</div><div class="line">      <span class="built_in">console</span>.log(filename)</div><div class="line">      gm(source + filename).size(<span class="function"><span class="keyword">function</span> (<span class="params">err, values</span>) </span>{</div><div class="line">        <span class="keyword">if</span> (err) {</div><div class="line">          <span class="built_in">console</span>.log(<span class="string">&apos;Error identifying file size: &apos;</span> + err)</div><div class="line">        } <span class="keyword">else</span> {</div><div class="line">          <span class="built_in">console</span>.log(filename + <span class="string">&apos; : &apos;</span> + values)</div><div class="line">          aspect = (values.width / values.height)</div><div class="line">          widths.forEach(<span class="function"><span class="keyword">function</span> (<span class="params">width, widthIndex</span>) </span>{</div><div class="line">            height = <span class="built_in">Math</span>.round(width / aspect)</div><div class="line">            <span class="built_in">console</span>.log(<span class="string">&apos;resizing &apos;</span> + filename + <span class="string">&apos;to &apos;</span> + height + <span class="string">&apos;x&apos;</span> + height)</div><div class="line">            <span class="keyword">this</span>.resize(width, height).write(dest + <span class="string">&apos;w&apos;</span> + width + <span class="string">&apos;_&apos;</span> + filename, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>{</div><div class="line">              <span class="keyword">if</span> (err) <span class="built_in">console</span>.log(<span class="string">&apos;Error writing file: &apos;</span> + err)</div><div class="line">            })</div><div class="line">          }.bind(<span class="keyword">this</span>))</div><div class="line">        }</div><div class="line">      })</div><div class="line">    })</div><div class="line">  }</div><div class="line">})</div></pre></td></tr></table></figure></p>
+<p>N&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7EC4;&#x5408;&#x6210;&#x6700;&#x540E;&#x4E00;&#x9EBB;&#x9EBB;&#x7684;<code>})</code>&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x56DE;&#x8C03;&#x5730;&#x72F1;&#x3002;</p>
+<h1 id="&#x56DE;&#x8C03;&#x5730;&#x72F1;&#xFF0C;&#x4E0D;&#x7EA6;"><a href="#&#x56DE;&#x8C03;&#x5730;&#x72F1;&#xFF0C;&#x4E0D;&#x7EA6;" class="headerlink" title="&#x56DE;&#x8C03;&#x5730;&#x72F1;&#xFF0C;&#x4E0D;&#x7EA6;"></a>&#x56DE;&#x8C03;&#x5730;&#x72F1;&#xFF0C;&#x4E0D;&#x7EA6;</h1><h2 id="&#x6241;&#x5E73;&#x5316;&#xFF01;&#x6241;&#x5E73;&#x5316;&#xFF01;&#x6241;&#x5E73;&#x5316;&#xFF01;"><a href="#&#x6241;&#x5E73;&#x5316;&#xFF01;&#x6241;&#x5E73;&#x5316;&#xFF01;&#x6241;&#x5E73;&#x5316;&#xFF01;" class="headerlink" title="&#x6241;&#x5E73;&#x5316;&#xFF01;&#x6241;&#x5E73;&#x5316;&#xFF01;&#x6241;&#x5E73;&#x5316;&#xFF01;"></a>&#x6241;&#x5E73;&#x5316;&#xFF01;&#x6241;&#x5E73;&#x5316;&#xFF01;&#x6241;&#x5E73;&#x5316;&#xFF01;</h2><p>&#x7B2C;&#x4E00;&#x7248;&#x4EE3;&#x7801;&#x1F447;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> form = <span class="built_in">document</span>.querySelector(<span class="string">&apos;form&apos;</span>)</div><div class="line">form.onsubmit = <span class="function"><span class="keyword">function</span> (<span class="params">submitEvent</span>) </span>{</div><div class="line">  <span class="keyword">var</span> name = <span class="built_in">document</span>.querySelector(<span class="string">&apos;input&apos;</span>).value</div><div class="line">  request({</div><div class="line">    <span class="attr">uri</span>: <span class="string">&quot;http://example.com/upload&quot;</span>,</div><div class="line">    <span class="attr">body</span>: name,</div><div class="line">    <span class="attr">method</span>: <span class="string">&quot;POST&quot;</span></div><div class="line">  }, <span class="function"><span class="keyword">function</span> (<span class="params">err, response, body</span>) </span>{</div><div class="line">    <span class="keyword">var</span> statusMessage = <span class="built_in">document</span>.querySelector(<span class="string">&apos;.status&apos;</span>)</div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">return</span> statusMessage.value = err</div><div class="line">    statusMessage.value = body</div><div class="line">  })</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>&#x533F;&#x540D;&#x51FD;&#x6570;&#x8D77;&#x540D;&#x5B57;&#xFF0C;&#x51FD;&#x6570;&#x58F0;&#x660E;&#x79FB;&#x51FA;&#x6765;&#xFF0C;biu~&#x53D8;&#x8EAB;&#x7B2C;&#x4E00;&#x7248;&#x4EE3;&#x7801;&#x1F447;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">document</span>.querySelector(<span class="string">&apos;form&apos;</span>).onsubmit = formSubmit</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">formSubmit</span> (<span class="params">submitEvent</span>) </span>{</div><div class="line">  <span class="keyword">var</span> name = <span class="built_in">document</span>.querySelector(<span class="string">&apos;input&apos;</span>).value</div><div class="line">  request({</div><div class="line">    <span class="attr">uri</span>: <span class="string">&quot;http://example.com/upload&quot;</span>,</div><div class="line">    <span class="attr">body</span>: name,</div><div class="line">    <span class="attr">method</span>: <span class="string">&quot;POST&quot;</span></div><div class="line">  }, postResponse)</div><div class="line">}</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">postResponse</span> (<span class="params">err, response, body</span>) </span>{</div><div class="line">  <span class="keyword">var</span> statusMessage = <span class="built_in">document</span>.querySelector(<span class="string">&apos;.status&apos;</span>)</div><div class="line">  <span class="keyword">if</span> (err) <span class="keyword">return</span> statusMessage.value = err</div><div class="line">  statusMessage.value = body</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<h2 id="&#x6A21;&#x5757;&#x5316;&#xFF01;&#x6A21;&#x5757;&#x5316;&#xFF01;&#x6A21;&#x5757;&#x5316;&#xFF01;"><a href="#&#x6A21;&#x5757;&#x5316;&#xFF01;&#x6A21;&#x5757;&#x5316;&#xFF01;&#x6A21;&#x5757;&#x5316;&#xFF01;" class="headerlink" title="&#x6A21;&#x5757;&#x5316;&#xFF01;&#x6A21;&#x5757;&#x5316;&#xFF01;&#x6A21;&#x5757;&#x5316;&#xFF01;"></a>&#x6A21;&#x5757;&#x5316;&#xFF01;&#x6A21;&#x5757;&#x5316;&#xFF01;&#x6A21;&#x5757;&#x5316;&#xFF01;</h2><p>&#x628A;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x5355;&#x72EC;&#x653E;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x6BD4;&#x5982;&#x53EB;<code>formuploader.js</code>&#x3002;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">module</span>.exports.submit = formSubmit</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">formSubmit</span> (<span class="params">submitEvent</span>) </span>{</div><div class="line">  <span class="keyword">var</span> name = <span class="built_in">document</span>.querySelector(<span class="string">&apos;input&apos;</span>).value</div><div class="line">  request({</div><div class="line">    <span class="attr">uri</span>: <span class="string">&quot;http://example.com/upload&quot;</span>,</div><div class="line">    <span class="attr">body</span>: name,</div><div class="line">    <span class="attr">method</span>: <span class="string">&quot;POST&quot;</span></div><div class="line">  }, postResponse)</div><div class="line">}</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">postResponse</span> (<span class="params">err, response, body</span>) </span>{</div><div class="line">  <span class="keyword">var</span> statusMessage = <span class="built_in">document</span>.querySelector(<span class="string">&apos;.status&apos;</span>)</div><div class="line">  <span class="keyword">if</span> (err) <span class="keyword">return</span> statusMessage.value = err</div><div class="line">  statusMessage.value = body</div><div class="line">}</div></pre></td></tr></table></figure></p>
+<p>&#x5F15;&#x5165;&#x4E00;&#x4E0B;&#x6587;&#x4EF6;&#xFF0C;&#x53C8;&#x53D8;&#x8EAB;&#x1F447;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> formUploader = <span class="built_in">require</span>(<span class="string">&apos;formuploader&apos;</span>)</div><div class="line"><span class="built_in">document</span>.querySelector(<span class="string">&apos;form&apos;</span>).onsubmit = formUploader.submit</div></pre></td></tr></table></figure></p>
+<h2 id="&#x62A5;&#x9519;&#xFF01;&#x62A5;&#x9519;&#xFF01;&#x62A5;&#x9519;&#xFF01;"><a href="#&#x62A5;&#x9519;&#xFF01;&#x62A5;&#x9519;&#xFF01;&#x62A5;&#x9519;&#xFF01;" class="headerlink" title="&#x62A5;&#x9519;&#xFF01;&#x62A5;&#x9519;&#xFF01;&#x62A5;&#x9519;&#xFF01;"></a>&#x62A5;&#x9519;&#xFF01;&#x62A5;&#x9519;&#xFF01;&#x62A5;&#x9519;&#xFF01;</h2><p>&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;&#x7279;&#x6B8A;&#x6027;&#x8D28;&#xFF0C;&#x51B3;&#x5B9A;&#x4E86;&#x4F60;&#x6709;&#x65F6;&#x6BD4;&#x8F83;&#x96BE;&#x628A;&#x63E1;&#xFF0C;&#x5176;&#x4EFB;&#x52A1;&#x5728;&#x54EA;&#x4E00;&#x6B65;&#x53D1;&#x751F;&#x4E86;&#x9519;&#x8BEF;&#x3002;&#x56E0;&#x6B64;&#x5EFA;&#x8BAE;&#x5904;&#x7406;&#x6BCF;&#x4E00;&#x6B21;&#x53EF;&#x80FD;&#x53D1;&#x751F;&#x7684;&#x62A5;&#x9519;&#x3002;<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> fs = <span class="built_in">require</span>(<span class="string">&apos;fs&apos;</span>)</div><div class="line"></div><div class="line">fs.readFile(<span class="string">&apos;/Does/not/exist&apos;</span>, handleFile)</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">handleFile</span> (<span class="params">error, file</span>) </span>{</div><div class="line">    <span class="keyword">if</span> (error) </div><div class="line">        <span class="keyword">return</span> <span class="built_in">console</span>.error(<span class="string">&apos;Uhoh, there was an error&apos;</span>, error)</div><div class="line">    <span class="comment">// otherwise, continue on and use `file` in your code</span></div><div class="line">}</div></pre></td></tr></table></figure></p>
+<h2 id="Promise&#xFF01;Generator&#xFF01;Async&#xFF01;"><a href="#Promise&#xFF01;Generator&#xFF01;Async&#xFF01;" class="headerlink" title="Promise&#xFF01;Generator&#xFF01;Async&#xFF01;"></a>Promise&#xFF01;Generator&#xFF01;Async&#xFF01;</h2><p>&#x8FD9;&#x4E09;&#x8005;&#x90FD;&#x5C5E;&#x4E8E;&#x66F4;&#x9AD8;&#x7EA7;&#x4E00;&#x4E9B;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x4E0D;&#x8FC7;&#x4E2A;&#x4EBA;&#x89C9;&#x5F97;&#x6253;&#x597D;&#x57FA;&#x7840;&#x518D;&#x5954;&#x5411;&#x9AD8;&#x7EA7;&#x4F1A;&#x6BD4;&#x8F83;&#x597D;&#x4E00;&#x4E9B;~</p>
+<h1 id="&#x5199;&#x5728;&#x6700;&#x540E;"><a href="#&#x5199;&#x5728;&#x6700;&#x540E;" class="headerlink" title="&#x5199;&#x5728;&#x6700;&#x540E;"></a>&#x5199;&#x5728;&#x6700;&#x540E;</h1><p>&#x603B;&#x7ED3;&#x5C31;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x5207;&#x56FE;&#x4ED4;&#x5F88;&#x5FD9;&#x7684;&#xFF0C;&#x6CA1;&#x65F6;&#x95F4;&#x53BB;&#x56DE;&#x8C03;&#x5730;&#x72F1;&#x73A9;&#x3002;&#x628A;&#x4EE3;&#x7801;&#x5199;&#x597D;&#xFF0C;&#x522B;&#x8BA9;&#x81EA;&#x5DF1;&#x683D;&#x8FDB;&#x53BB;&#xFF0C;&#x4E5F;&#x522B;&#x8BA9;&#x540E;&#x671F;&#x5F00;&#x53D1;&#x7684;&#x5C0F;&#x4F19;&#x4F34;&#x683D;&#x91CC;&#x9762;~</p>
+<blockquote>
+<p><strong>&#x53C2;&#x8003;</strong></p>
+<ul>
+<li>&#x5927;&#x9C7C;&#x7684;&#x81EA;&#x6211;&#x6210;&#x957F; &#x2014; <a href="https://www.jianshu.com/p/d31d2ecb4162" target="_blank" rel="external">&#x56DE;&#x8C03;&#x5730;&#x72F1;Callback Hell</a></li>
+</ul>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-学好算法有饭吃" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1039,103 +1108,6 @@
 
 
   
-    <article id="post-做一只会沟通的技术仔" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/09/27/做一只会沟通的技术仔/">做一只会沟通的技术仔</a>
-    </h1>
-  
-
-        
-        <a href="/2017/09/27/做一只会沟通的技术仔/" class="archive-article-date">
-  	<time datetime="2017-09-27T11:06:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="&#x5173;&#x952E;&#x5BF9;&#x8BDD;"><a href="#&#x5173;&#x952E;&#x5BF9;&#x8BDD;" class="headerlink" title="&#x5173;&#x952E;&#x5BF9;&#x8BDD;"></a>&#x5173;&#x952E;&#x5BF9;&#x8BDD;</h1><h2 id="&#x89E3;&#x51B3;&#x5173;&#x952E;&#x5BF9;&#x8BDD;&#x7684;&#x539F;&#x5219;"><a href="#&#x89E3;&#x51B3;&#x5173;&#x952E;&#x5BF9;&#x8BDD;&#x7684;&#x539F;&#x5219;" class="headerlink" title="&#x89E3;&#x51B3;&#x5173;&#x952E;&#x5BF9;&#x8BDD;&#x7684;&#x539F;&#x5219;"></a>&#x89E3;&#x51B3;&#x5173;&#x952E;&#x5BF9;&#x8BDD;&#x7684;&#x539F;&#x5219;</h2><ul>
-<li>&#x660E;&#x786E;&#x81EA;&#x5DF1;&#x7684;&#x5BF9;&#x8BDD;&#x76EE;&#x7684;</li>
-<li>&#x5728;&#x5BF9;&#x8BDD;&#x8FC7;&#x7A0B;&#x4E2D;&#x59CB;&#x7EC8;&#x6CE8;&#x610F;&#x7EF4;&#x62A4;&#x5B89;&#x5168;&#x611F;</li>
-</ul>
-<h2 id="&#x5982;&#x4F55;&#x786E;&#x5B9A;&#x76EE;&#x6807;"><a href="#&#x5982;&#x4F55;&#x786E;&#x5B9A;&#x76EE;&#x6807;" class="headerlink" title="&#x5982;&#x4F55;&#x786E;&#x5B9A;&#x76EE;&#x6807;"></a>&#x5982;&#x4F55;&#x786E;&#x5B9A;&#x76EE;&#x6807;</h2><ul>
-<li><p>&#x4ECE;&#x81EA;&#x5DF1;&#x505A;&#x8D77;<br>&#x63A7;&#x5236;&#x81EA;&#x5DF1;&#x7684;&#x884C;&#x4E3A;&#xFF0C;&#x51B7;&#x9759;&#x601D;&#x8003;&#x3002;</p>
-</li>
-<li><p>&#x5173;&#x6CE8;&#x81EA;&#x5DF1;&#x7684;&#x771F;&#x6B63;&#x76EE;&#x7684;<br>&#x6211;&#x60F3;&#x4E3A;&#x81EA;&#x5DF1;&#x3001;&#x4ED6;&#x4EBA;&#x548C;&#x4EBA;&#x9645;&#x5173;&#x7CFB;&#x505A;&#x4E9B;&#x4EC0;&#x4E48;&#xFF1F;</p>
-</li>
-</ul>
-<h2 id="&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;"><a href="#&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;" class="headerlink" title="&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;"></a>&#x5982;&#x4F55;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;</h2><h3 id="&#x6CE8;&#x610F;&#x89C2;&#x5BDF;"><a href="#&#x6CE8;&#x610F;&#x89C2;&#x5BDF;" class="headerlink" title="&#x6CE8;&#x610F;&#x89C2;&#x5BDF;"></a>&#x6CE8;&#x610F;&#x89C2;&#x5BDF;</h3><p>&#x5F53;&#x5BF9;&#x65B9;&#x4E0E;&#x4F60;&#x6CA1;&#x6709;&#x8FBE;&#x6210;<strong>&#x5171;&#x540C;&#x76EE;&#x7684;</strong>&#x6216;&#x5F97;&#x5230;<strong>&#x4E92;&#x76F8;&#x5C0A;&#x91CD;</strong>&#xFF0C;&#x5BF9;&#x8BDD;&#x4F1A;&#x51FA;&#x73B0;&#x5371;&#x673A;&#x3002;</p>
-<h3 id="&#x6682;&#x505C;&#x5BF9;&#x8BDD;"><a href="#&#x6682;&#x505C;&#x5BF9;&#x8BDD;" class="headerlink" title="&#x6682;&#x505C;&#x5BF9;&#x8BDD;"></a>&#x6682;&#x505C;&#x5BF9;&#x8BDD;</h3><p>&#x5403;&#x9897;&#x836F;&#x51B7;&#x9759;&#x4E00;&#x4E0B;- -</p>
-<h3 id="&#x5E94;&#x5BF9;&#x63AA;&#x65BD;"><a href="#&#x5E94;&#x5BF9;&#x63AA;&#x65BD;" class="headerlink" title="&#x5E94;&#x5BF9;&#x63AA;&#x65BD;"></a>&#x5E94;&#x5BF9;&#x63AA;&#x65BD;</h3><ul>
-<li><p><strong>&#x81EA;&#x5DF1;&#x9677;&#x5165;&#x6C89;&#x9ED8;&#x6216;&#x66B4;&#x529B;&#x7684;&#x60C5;&#x51B5;&#x4E0B;</strong><br>&#x56DE;&#x987E;&#x81EA;&#x5DF1;&#x7684;&#x884C;&#x4E3A;&#x65B9;&#x5F0F;&#xFF0C;&#x5BFB;&#x627E;&#x80CC;&#x540E;&#x7684;&#x4E8B;&#x5B9E;<br>&#x6539;&#x53D8;&#x4E3B;&#x89C2;&#x81C6;&#x6D4B;</p>
-</li>
-<li><p><strong>&#x5BF9;&#x65B9;&#x9677;&#x5165;&#x6C89;&#x9ED8;&#x6216;&#x66B4;&#x529B;&#x7684;&#x60C5;&#x51B5;&#x4E0B;</strong><br>&#x5728;&#x5FC5;&#x8981;&#x65F6;&#x5411;&#x5BF9;&#x65B9;&#x9053;&#x6B49;<br>&#x5229;&#x7528;&#x5BF9;&#x6BD4;&#x6CD5;&#x6D88;&#x9664;&#x5BF9;&#x65B9;&#x7684;&#x8BEF;&#x89E3;&#xFF08;&#x8BF4;&#x660E;&#x4F60;&#x4E0D;&#x5E0C;&#x671B;&#x5982;&#x4F55;/&#x5E0C;&#x671B;&#x5982;&#x4F55;&#xFF09;<br>&#x63D0;&#x51FA;&#x5171;&#x540C;&#x76EE;&#x7684;</p>
-</li>
-</ul>
-<h2 id="&#x5982;&#x4F55;&#x9648;&#x8FF0;&#x81EA;&#x5DF1;&#x7684;&#x89C2;&#x70B9;"><a href="#&#x5982;&#x4F55;&#x9648;&#x8FF0;&#x81EA;&#x5DF1;&#x7684;&#x89C2;&#x70B9;" class="headerlink" title="&#x5982;&#x4F55;&#x9648;&#x8FF0;&#x81EA;&#x5DF1;&#x7684;&#x89C2;&#x70B9;"></a>&#x5982;&#x4F55;&#x9648;&#x8FF0;&#x81EA;&#x5DF1;&#x7684;&#x89C2;&#x70B9;</h2><p>&#x91C7;&#x7528;<strong>&#x7EFC;&#x5408;&#x9648;&#x8FF0;&#x6CD5;</strong></p>
-<ul>
-<li><strong>&#x5206;&#x4EAB;</strong>&#x4E8B;&#x5B9E;&#x7ECF;&#x8FC7;</li>
-<li><strong>&#x8BF4;&#x51FA;</strong>&#x4F60;&#x7684;&#x60F3;&#x6CD5;</li>
-<li><strong>&#x5F81;&#x8BE2;</strong>&#x5BF9;&#x65B9;&#x89C2;&#x70B9;</li>
-<li>&#x505A;&#x51FA;<strong>&#x8BD5;&#x63A2;</strong>&#x8868;&#x8FF0;</li>
-<li><strong>&#x9F13;&#x52B1;</strong>&#x505A;&#x51FA;&#x5C1D;&#x8BD5;</li>
-</ul>
-<h2 id="&#x5982;&#x4F55;&#x5E2E;&#x52A9;&#x5BF9;&#x65B9;&#x8D70;&#x51FA;&#x6C89;&#x9ED8;&#x6216;&#x66B4;&#x529B;&#x72B6;&#x6001;"><a href="#&#x5982;&#x4F55;&#x5E2E;&#x52A9;&#x5BF9;&#x65B9;&#x8D70;&#x51FA;&#x6C89;&#x9ED8;&#x6216;&#x66B4;&#x529B;&#x72B6;&#x6001;" class="headerlink" title="&#x5982;&#x4F55;&#x5E2E;&#x52A9;&#x5BF9;&#x65B9;&#x8D70;&#x51FA;&#x6C89;&#x9ED8;&#x6216;&#x66B4;&#x529B;&#x72B6;&#x6001;"></a>&#x5982;&#x4F55;&#x5E2E;&#x52A9;&#x5BF9;&#x65B9;&#x8D70;&#x51FA;&#x6C89;&#x9ED8;&#x6216;&#x66B4;&#x529B;&#x72B6;&#x6001;</h2><ul>
-<li><p>&#x8BE2;&#x95EE;&#x89C2;&#x70B9;<br>&#x8868;&#x660E;&#x4F60;&#x5F88;&#x6709;&#x5174;&#x8DA3;&#x4E86;&#x89E3;&#x5BF9;&#x65B9;&#x7684;&#x770B;&#x6CD5;&#x3002;</p>
-</li>
-<li><p>&#x786E;&#x8BA4;&#x611F;&#x53D7;<br>&#x901A;&#x8FC7;&#x8868;&#x793A;&#x9AD8;&#x5EA6;&#x7406;&#x89E3;&#x5BF9;&#x65B9;&#x7684;&#x611F;&#x53D7;&#x589E;&#x5F3A;&#x5B89;&#x5168;&#x611F;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;<strong>&#x91CD;&#x65B0;&#x63CF;&#x8FF0;</strong>&#x4ED6;&#x4EEC;&#x7684;&#x8868;&#x8FBE;&#xFF0C;&#x6765;&#x8868;&#x660E;&#x81EA;&#x5DF1;&#x7406;&#x89E3;&#x5176;&#x89C2;&#x70B9;&#x3002;</p>
-</li>
-<li><p>&#x4E3B;&#x52A8;&#x5F15;&#x5BFC;<br>&#x5982;&#x679C;&#x5BF9;&#x65B9;&#x8FD8;&#x662F;&#x9000;&#x7F29;&#x8FDF;&#x7591;&#xFF0C;&#x53EF;&#x5BF9;&#x4ED6;&#x4EEC;&#x7684;&#x60F3;&#x6CD5;&#x6216;&#x611F;&#x53D7;&#x505A;&#x51FA;&#x6700;&#x7B26;&#x5408;&#x60C5;&#x51B5;&#x7684;&#x731C;&#x6D4B;&#x3002;</p>
-</li>
-</ul>
-<blockquote>
-<p>&#x5F53;&#x4E0E;&#x5BF9;&#x65B9;&#x89C2;&#x70B9;&#x76F8;&#x5DEE;&#x751A;&#x8FDC;&#x65F6;&#xFF0C;&#x4E0D;&#x8981;&#x7B80;&#x5355;&#x5730;&#x8BA4;&#x4E3A;&#x5BF9;&#x65B9;&#x662F;&#x9519;&#x8BEF;&#x7684;&#xFF0C;&#x800C;&#x5E94;&#x5F53;&#x628A;&#x4F60;&#x4EEC;&#x7684;&#x770B;&#x6CD5;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x3002;</p>
-</blockquote>
-<h2 id="&#x5C06;&#x6C9F;&#x901A;&#x8F6C;&#x5316;&#x4E3A;&#x884C;&#x52A8;&#x548C;&#x7ED3;&#x679C;"><a href="#&#x5C06;&#x6C9F;&#x901A;&#x8F6C;&#x5316;&#x4E3A;&#x884C;&#x52A8;&#x548C;&#x7ED3;&#x679C;" class="headerlink" title="&#x5C06;&#x6C9F;&#x901A;&#x8F6C;&#x5316;&#x4E3A;&#x884C;&#x52A8;&#x548C;&#x7ED3;&#x679C;"></a>&#x5C06;&#x6C9F;&#x901A;&#x8F6C;&#x5316;&#x4E3A;&#x884C;&#x52A8;&#x548C;&#x7ED3;&#x679C;</h2><ul>
-<li><p>&#x5B66;&#x4F1A;&#x51B3;&#x7B56;<br>&#x547D;&#x4EE4;&#x5F0F;&#xFF0C;&#x987E;&#x95EE;&#x5F0F;&#xFF0C;&#x6295;&#x7968;&#x5F0F;&#xFF0C;&#x5171;&#x8BC6;&#x5F0F;</p>
-</li>
-<li><p>&#x660E;&#x786E;&#x6267;&#x884C;&#x7EC6;&#x8282;<br>&#x660E;&#x786E;&#x8BF4;&#x660E;<strong>&#x884C;&#x52A8;&#x4EBA;</strong>&#x3001;<strong>&#x884C;&#x52A8;&#x76EE;&#x6807;</strong>&#x548C;<strong>&#x622A;&#x6B62;&#x65F6;&#x95F4;</strong>&#x7B49;&#x8981;&#x7D20;<br>&#x8BBE;&#x5B9A;<strong>&#x68C0;&#x67E5;&#x65F6;&#x95F4;</strong>&#xFF0C;&#x8BB0;&#x5F55;&#x4EFB;&#x52A1;&#x7EC6;&#x8282;<br>&#x7763;&#x4FC3;&#x884C;&#x52A8;&#x4EBA;&#x5458;&#x8D1F;&#x8D23;</p>
-</li>
-</ul>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">全能</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
@@ -1248,11 +1220,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">后端</a>
+                <a href="javascript:void(0)" class="js-tag color3">全能</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">全能</a>
+                <a href="javascript:void(0)" class="js-tag color3">后端</a>
               </li>
              
               <li class="article-tag-list-item">
